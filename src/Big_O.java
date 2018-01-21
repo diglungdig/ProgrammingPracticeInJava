@@ -108,6 +108,7 @@ static char ithLetter(int i){
 }
     public static void main(String[] args) {
 
+        
         System.out.println("Main starts");
 
         Scanner input = new Scanner(System.in);
