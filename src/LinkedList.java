@@ -1,7 +1,8 @@
 public class LinkedList<T> {
     
         public LinkedListNode<T> first = null;
-        
+        public LinkedListNode<T> last = null;
+
         /**
          * Insert at the front of the list
          * @param node
@@ -11,6 +12,18 @@ public class LinkedList<T> {
             first = node;
         }
     
+        //Append at the end of the list
+        public void append(LinkedListNode<T> node){
+            if(last == null){
+                last = node;
+                first = node;
+            }
+            else{
+                last.setNext(node);
+                last = node;
+            }
+        }
+
         /**
          * Remove from the front of the list
          * @param node
